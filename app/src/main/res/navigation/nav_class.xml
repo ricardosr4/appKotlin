@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_class"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.appkotlin.view.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_classFragment"
+            app:destination="@id/classFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/classFragment"
+        android:name="com.example.appkotlin.view.fragment.ClassFragment"
+        android:label="fragment_class"
+        tools:layout="@layout/fragment_class" >
+        <action
+            android:id="@+id/action_classFragment_to_varValFragment"
+            app:destination="@id/varValFragment" />
+        <action
+            android:id="@+id/action_classFragment_to_elseIfFragment"
+            app:destination="@id/elseIfFragment" />
+        <action
+            android:id="@+id/action_classFragment_to_nullsFragment"
+            app:destination="@id/nullsFragment" />
+        <action
+            android:id="@+id/action_classFragment_to_whenFragment"
+            app:destination="@id/whenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/varValFragment"
+        android:name="com.example.appkotlin.view.fragment.VarValFragment"
+        android:label="fragment_var_val"
+        tools:layout="@layout/fragment_var_val" />
+    <fragment
+        android:id="@+id/elseIfFragment"
+        android:name="com.example.appkotlin.view.fragment.ElseIfFragment"
+        android:label="fragment_else_if"
+        tools:layout="@layout/fragment_else_if" />
+    <fragment
+        android:id="@+id/nullsFragment"
+        android:name="com.example.appkotlin.view.fragment.NullsFragment"
+        android:label="fragment_nulls"
+        tools:layout="@layout/fragment_nulls" />
+    <fragment
+        android:id="@+id/whenFragment"
+        android:name="com.example.appkotlin.view.fragment.WhenFragment"
+        android:label="fragment_when"
+        tools:layout="@layout/fragment_when" />
+</navigation>
