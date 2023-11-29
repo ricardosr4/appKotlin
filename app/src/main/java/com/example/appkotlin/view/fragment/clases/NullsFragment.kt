@@ -1,4 +1,4 @@
-package com.example.appkotlin.view.fragment
+package com.example.appkotlin.view.fragment.clases
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,15 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-import com.example.appkotlin.databinding.FragmentElseIfBinding
+import com.example.appkotlin.databinding.FragmentNullsBinding
 
 
-class ElseIfFragment : Fragment() {
-    private lateinit var binding: FragmentElseIfBinding
+class NullsFragment : Fragment() {
+    private lateinit var binding: FragmentNullsBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = FragmentElseIfBinding.inflate(layoutInflater)
+        binding = FragmentNullsBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
 
     }
@@ -23,10 +23,9 @@ class ElseIfFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentElseIfBinding.inflate(layoutInflater)
-        return  binding.root
+        binding = FragmentNullsBinding.inflate(layoutInflater)
+        return binding.root
     }
-
 
 
 }

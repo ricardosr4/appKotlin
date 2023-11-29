@@ -2,10 +2,21 @@
     <string name="app_name">AppKotlin</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="ingresa_tu_pasword">INGRESA TU PASSWORD</string>
-    <string name="password">PASSWORD</string>
-    <string name="Ingresa_tu_Email">INGRESA TU EMAIL</string>
+    <string name="ingresa_tu_pasword">Ingresa tu Password</string>
+    <string name="password">Password</string>
+    <string name="Ingresa_tu_Email">Ingresa tu Email</string>
     <string name="bienvenido_al_curso_kotlin">BIENVENIDO AL CURSO KOTLIN</string>
-    <string name="usuario">USUARIO</string>
+    <string name="usuario">Usuario</string>
     <string name="entrar">ENTRAR</string>
+    <string name="ingresa_tu_usuario">Ingresa tu Usuario</string>
+    <string name="ingresa_tu_email">Ingresa tu Email</string>
+    <string name="ingresa_tu_nombre">Ingresa tu Nombre</string>
+    <string name="crea_aqui_tu_cuenta">Crea Aqui tu Cuenta!!</string>
+    <string name="olvidaste_tu_password">Olvidaste tu Password?</string>
+    <string name="nombre">Nombre</string>
+    <string name="email">Email</string>
+    <string name="registrar">REGISTRAR</string>
+    <string name="registrate_aqui_para_que_puedas_acceder_a_las_clases">Registrate Aqui para que puedas Acceder a las Clases...</string>
+    <string name="resgistrar">Resgistrar</string>
+    <string name="ir_a_login">Ir a Login !!</string>
 </resources>

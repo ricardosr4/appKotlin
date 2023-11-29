@@ -1,4 +1,4 @@
-package com.example.appkotlin.view.fragment
+package com.example.appkotlin.view.fragment.clases
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,15 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-import com.example.appkotlin.databinding.FragmentNullsBinding
+import com.example.appkotlin.databinding.FragmentVarValBinding
 
 
-class NullsFragment : Fragment() {
-    private lateinit var binding: FragmentNullsBinding
+class VarValFragment : Fragment() {
+    private lateinit var binding: FragmentVarValBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = FragmentNullsBinding.inflate(layoutInflater)
+        binding = FragmentVarValBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
 
     }
@@ -23,7 +23,7 @@ class NullsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentNullsBinding.inflate(layoutInflater)
+        binding = FragmentVarValBinding.inflate(layoutInflater)
         return binding.root
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragment.LoginFragment">
+    tools:context=".view.fragment.login.LoginFragment">
 
     <ImageView
         android:id="@+id/initLog"
@@ -24,7 +24,6 @@
         android:gravity="center"
         android:layout_height="wrap_content"
         android:text="@string/bienvenido_al_curso_kotlin"
-
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginTop="50dp"
@@ -50,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginEnd="45dp"
-        android:hint="@string/Ingresa_tu_Email"
+        android:hint="@string/ingresa_tu_usuario"
         app:boxCornerRadiusBottomEnd="8dp"
         app:boxCornerRadiusBottomStart="8dp"
         app:boxCornerRadiusTopEnd="8dp"
@@ -107,14 +106,40 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/tvCreateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crea_aqui_tu_cuenta"
+        android:textStyle="bold"
+        android:textColor="@color/blue_kotlin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldPassword"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/olvidaste_tu_password"
+        android:textStyle="bold"
+        android:textColor="@color/blue_kotlin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldPassword"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="20dp"/>
+
+
+
     <Button
         android:id="@+id/btnEnter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/entrar"
         android:backgroundTint="@color/orange_kotlin"
-        android:layout_marginHorizontal="30dp"
-        android:textSize="25sp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/blue_kotlin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

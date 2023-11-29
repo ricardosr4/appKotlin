@@ -7,12 +7,15 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.appkotlin.view.fragment.LoginFragment"
+        android:name="com.example.appkotlin.view.fragment.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_classFragment"
             app:destination="@id/classFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginRegisterFragment"
+            app:destination="@id/loginRegisterFragment" />
     </fragment>
     <fragment
         android:id="@+id/classFragment"
@@ -34,22 +37,31 @@
     </fragment>
     <fragment
         android:id="@+id/varValFragment"
-        android:name="com.example.appkotlin.view.fragment.VarValFragment"
+        android:name="com.example.appkotlin.view.fragment.clases.VarValFragment"
         android:label="fragment_var_val"
         tools:layout="@layout/fragment_var_val" />
     <fragment
         android:id="@+id/elseIfFragment"
-        android:name="com.example.appkotlin.view.fragment.ElseIfFragment"
+        android:name="com.example.appkotlin.view.fragment.clases.ElseIfFragment"
         android:label="fragment_else_if"
         tools:layout="@layout/fragment_else_if" />
     <fragment
         android:id="@+id/nullsFragment"
-        android:name="com.example.appkotlin.view.fragment.NullsFragment"
+        android:name="com.example.appkotlin.view.fragment.clases.NullsFragment"
         android:label="fragment_nulls"
         tools:layout="@layout/fragment_nulls" />
     <fragment
         android:id="@+id/whenFragment"
-        android:name="com.example.appkotlin.view.fragment.WhenFragment"
+        android:name="com.example.appkotlin.view.fragment.clases.WhenFragment"
         android:label="fragment_when"
         tools:layout="@layout/fragment_when" />
+    <fragment
+        android:id="@+id/loginRegisterFragment"
+        android:name="com.example.appkotlin.view.fragment.login.LoginRegisterFragment"
+        android:label="fragment_login_register"
+        tools:layout="@layout/fragment_login_register" >
+        <action
+            android:id="@+id/action_loginRegisterFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
